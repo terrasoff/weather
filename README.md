@@ -30,3 +30,7 @@ The Weather page has primitive mark up just to demonstrate data flow.
 # Check code styles.
 
 * Run `make lint` to check code styles.
+
+# Known issues
+
+Need to set up webpack to handle `/` endpoint (rewriting settings). As for now we need to request `/weather` endpoint. 
