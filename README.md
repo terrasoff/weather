@@ -1,6 +1,5 @@
 # Quick start
 
-* Run `make install` to launch docker environment locally.
 * Run `make up` to launch docker environment locally.
 * The application will be available on http://localhost:9000/weather.
 
