@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node",
+      "jest"
+    ],
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "baseUrl": "./",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "noImplicitReturns": true,
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "*": [
+        "./node_modules/@types/*",
+        "*"
+      ],
+      "@Assets/*": ["./assets/*"],
+      "@Infrastructure/*": ["./infrastructure/*"],
+      "@App/*": ["./src/App/*"],
+      "@Config": ["./src/Config"],
+      "@Container": ["./src/Container"],
+      "@Container/*": ["./src/Container/*"],
+      "@Components/*": ["./src/Components/*"],
+      "@ServiceProviders": ["./src/ServiceProviders"],
+      "@Stores/*": ["./src/Stores/*"],
+      "@Types": ["./src/Types"]
+    }
+  },
+  "include": [
+    "types/*",
+    "src/**/*",
+    "tests/**/*",
+    "infrastructure/**/*"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "webpack/**"
+  ]
+}
