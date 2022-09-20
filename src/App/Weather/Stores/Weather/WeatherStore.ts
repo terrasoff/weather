@@ -10,6 +10,7 @@ export class WeatherStore {
   private readonly _data = new ValueBoxStore<WeatherModel>();
 
   public readonly fetch = new AsyncOperationWorkflowStore<LocationModel>(
+    // TODO enhance error handling for requests
     async (location): Promise<void> => {
       const weatherResponse = await fetch(`https://api.weather.gov/points/${location.lat},${location.lon}`);
       if (weatherResponse.status !== 200) {
