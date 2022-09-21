@@ -40,6 +40,7 @@ export class LoginForm extends PureComponent<LoginFormProps> {
           Please login to your platform
         </LoginFormHint>
         <form
+          // TODO extract to a separate callback to optimize the loading
           onSubmit={
             (e): void => {
               e.stopPropagation();

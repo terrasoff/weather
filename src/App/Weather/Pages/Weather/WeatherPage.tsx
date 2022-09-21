@@ -80,6 +80,7 @@ export class WeatherPage extends PureComponent {
             Latitude:
             <input
               value={location.value.lat}
+              // TODO extract to a separate callback to optimize the loading
               onChange={e => location.set({ ...location.value, lat: +e.target.value })}
             />
           </div>
@@ -87,12 +88,16 @@ export class WeatherPage extends PureComponent {
             Longitude:
             <input
               value={location.value.lon}
+              // TODO extract to a separate callback to optimize the loading
               onChange={e => location.set({ ...location.value, lon: +e.target.value })}
             />
           </div>
         </div>
         <div>
-          <select onChange={e => units.set(e.target.value as TemperatureUnitType)}>
+          <select
+            // TODO extract to a separate callback to optimize the loading
+            onChange={e => units.set(e.target.value as TemperatureUnitType)}
+          >
             <option value="F">Fahrenheit</option>
             <option value="C">Celsius.</option>
           </select>
