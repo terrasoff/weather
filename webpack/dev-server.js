@@ -13,9 +13,6 @@ module.exports = function ({ isProductionMode }) {
       },
       compress: true,
       port: 9000,
-      historyApiFallback: {
-        index: "/weather_index.html",
-      },
     },
   };
 }
