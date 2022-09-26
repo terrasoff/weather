@@ -6,7 +6,7 @@ module.exports = function ({ isProductionMode, apps }) {
 
   const plugins = apps.map(function (app) {
     const pluginOptions = {
-      template: './public/index.html',
+      template: './assets/index.html',
       title: app.name,
       filename: `index.html`,
       chunks: ['vendor', 'shared', app.name],
@@ -16,7 +16,7 @@ module.exports = function ({ isProductionMode, apps }) {
       metadata: {
         baseUrl: app.baseUrl
       },
-      favicon: './public/favicon.ico',
+      favicon: './assets/favicon.ico',
     };
 
     if (isProductionMode) {
